@@ -1,0 +1,1 @@
+module.exports.pw = { password: process.envMYSQL_PW };
