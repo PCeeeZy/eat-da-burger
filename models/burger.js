@@ -8,13 +8,13 @@ const burger = {
             cb(result);
         });
     },
-    insertOne: (selectedTable, columns, value1, value2, cb) => {
-        orm.insertOne("burgers", columns, value1, value2, (result) => {
+    insertOne: (selectedTable, column1, column2, value1, value2, cb) => {
+        orm.insertOne("burgers", column1, column2, value1, value2, (result) => {
             cb(result)
         });
     },
-    updateOne: (selectedTable, updatedValues, conditional, cb) => {
-        orm.updateOne("burgers", updatedValues, conditional, (result) => {
+    updateOne: (selectedTable, column1, column2, updatedValue1, updatedValue2, conditional, cb) => {
+        orm.updateOne("burgers", column1, column2, updatedValue1, updatedValue2, conditional, (result) => {
             cb(result);
         });
     }
